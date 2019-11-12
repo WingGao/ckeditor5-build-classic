@@ -28,6 +28,7 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import Font from '@ckeditor/ckeditor5-font/src/font';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -38,6 +39,7 @@ ClassicEditor.builtinPlugins = [
 	Autoformat,
 	Bold,
 	Italic,
+	Font,
 	BlockQuote,
 	CKFinder,
 	EasyImage,
@@ -63,6 +65,9 @@ ClassicEditor.defaultConfig = {
 		items: [
 			'heading',
 			'|',
+			'fontFamily',
+			'fontSize',
+			'fontColor',
 			'bold',
 			'italic',
 			'link',
@@ -95,6 +100,24 @@ ClassicEditor.defaultConfig = {
 			'mergeTableCells'
 		]
 	},
+	fontFamily: {
+		options: [
+			'default',
+			'宋体,SimSun',
+			'微软雅黑,Microsoft YaHei',
+			'楷体,楷体_GB2312, SimKai',
+			'黑体, SimHei',
+			'隶书, SimLi',
+			'Arial, Helvetica, sans-serif',
+			'Courier New, Courier, monospace',
+			'Georgia, serif',
+			'Lucida Sans Unicode, Lucida Grande, sans-serif',
+			'Tahoma, Geneva, sans-serif',
+			'Times New Roman, Times, serif',
+			'Trebuchet MS, Helvetica, sans-serif',
+			'Verdana, Geneva, sans-serif'
+		]
+	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en'
+	language: 'zh-cn'
 };
