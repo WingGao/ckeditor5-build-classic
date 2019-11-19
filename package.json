@@ -36,6 +36,7 @@
     "@ckeditor/ckeditor5-easy-image": "^15.0.0",
     "@ckeditor/ckeditor5-editor-classic": "^15.0.0",
     "@ckeditor/ckeditor5-essentials": "^15.0.0",
+	  "@ckeditor/ckeditor5-font": "^15.0.0",
     "@ckeditor/ckeditor5-heading": "^15.0.0",
     "@ckeditor/ckeditor5-image": "^15.0.0",
     "@ckeditor/ckeditor5-indent": "^15.0.0",
@@ -89,6 +90,5 @@
     }
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-font": "^15.0.0"
   }
 }
